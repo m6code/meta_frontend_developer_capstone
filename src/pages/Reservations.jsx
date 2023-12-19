@@ -5,7 +5,7 @@ import Logo from '../components/Logo.jsx';
 import FooterNav from '../components/FooterNav.jsx';
 import MiddleSection from '../components/MiddleSection.jsx';
 
-import BookForm from '../components/BookFrom.jsx';
+import BookForm from '../components/BookForm.jsx';
 import {Footer} from "../components/Footer.jsx";
 import {Header} from "../components/Header.jsx";
 import {useEffect} from "react";

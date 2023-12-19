@@ -1,6 +1,6 @@
 import RatingCard from './RatingCard';
 
-const Testimonials = (props) => {
+const Testimonials = () => {
     return (
         <section className="testimonials">
             <h2 className="section-title testimonials-title">Testimonials</h2>
