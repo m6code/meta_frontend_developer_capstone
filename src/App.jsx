@@ -1,19 +1,17 @@
-import {useState} from 'react'
-import './App.css'
-import {Header} from "./components/Header.jsx";
-import {Main} from "./components/Main.jsx";
-import {Footer} from "./components/Footer.jsx";
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import Reservations from './components/Reservations';
 
 function App() {
-
     return (
         <>
-            <Header/>
-            <Main/>
-            <Footer/>
-
+            <Routes>
+                <Route path='/' element={<Homepage />} />
+                <Route path='/reservations' element={<Reservations />} />
+            </Routes>
         </>
-    )
+    );
 }
 
-export default App
+export default App;

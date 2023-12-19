@@ -1,10 +1,11 @@
-import {Nav} from "./Nav.jsx";
+import Navigation from "./Navigation.jsx";
+import Hero from "./Hero.jsx";
 
 export function Header() {
     return (
-        <header className="header-container">
-            <img src="src/assets/Logo.svg" alt="Little Lemon Logo"/>
-            <Nav/>
+        <header className="header">
+            <Navigation />
+            <Hero />
         </header>
     )
 }

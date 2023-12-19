@@ -41,13 +41,404 @@
 /*  color: #888;*/
 /*}*/
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 48px 64px 48px 64px;
+/*.header-container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin: 48px 64px 48px 64px;*/
+/*}*/
+
+/*.footer {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap');
+
+:root {
+    /* Color Palette */
+    --main_green: #495E57;
+    --main_yellow: #F4CE14;
+    --salmon: #EE9972;
+    --light_salmon: #FBDABB;
+    --light_gray: #EDEFEE;
+    --black: #333333;
+
+    /* Font Styles */
+    --title_font: 64px 'Markazi Text', serif;
+    --subtitle_font: 40px 'Markazi Text', serif;
+    --ledtext_font: 500 18px 'Karla', serif;
+    --section_title_font: 800 20px 'Karla', serif;
+    --categories_font: 800 16px  'Karla', serif;
+    --card_title_font: 700 18px  'Karla', serif;
+    --paragraph_font: 400 16px/24px 'Karla', sans-serif;
+    --highlight_font: 500 16px 'Karla', sans-serif;
 }
 
-.footer {
+
+/* Nav styles */
+.navigation {
+    padding: 2rem 18%;
+    display: flex;
+    gap: 10%;
+}
+
+.nav {
+    flex-grow: 1;
+    font: var(--highlight_font);
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
+}
+
+.nav-item {
+    flex-grow: 1;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--black);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: var(--main_green);
+    color: var(--light_gray)
+}
+
+/* Hero styles */
+.hero {
+    padding: 2rem 18%;
+    background-color: var(--main_green);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.hero-title {
+    font: var(--title_font);
+    color: var(--main_yellow);
+}
+
+.hero-subtitle {
+    font: var(--subtitle_font);
+    color: var(--light_gray);
+    margin-top: 0;
+}
+
+.hero-description {
+    font: var(--ledtext_font);
+    color: var(--light_gray);
+    padding: 2rem 0;
+    margin-right: 2rem;
+}
+
+.hero-button {
+    background-color: var(--main_yellow);
+    padding: 1rem 2rem;
+    border: none;
+    font: var(--highlight_font);
+    border-radius: 10px;
+}
+
+.hero-figure {
+    position: relative;
+}
+
+.hero-img {
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    height: 25rem;
+    object-fit: cover;
+}
+
+/* Main styles */
+.midle-section__container {
+    padding: 5rem 18%;
+}
+
+.midle-section__header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.midle-header__specials {
+    justify-content: space-between;
+}
+
+.midle-header__reservations {
+    justify-content: center;
+}
+
+.midle-section__title {
+    font: var(--title_font);
+    color: var(--black);
+}
+
+.midle-title__reservations {
+    font: var(--title_font);
+    color: var(--black);
+    justify-content: center;
+}
+
+.cto-button {
+    background-color: var(--main_yellow);
+    padding: 1rem 2rem;
+    border: none;
+    font: var(--highlight_font);
+    border-radius: 10px;
+}
+
+.cto-button:hover {
+    background-color: var(--light_gray);
+    cursor: pointer;
+    color: black;
+}
+
+.midle-section__specials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.midle-section__reservations {
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu card styles */
+.menu-card {
+    background-color: var(--light_gray);
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.card-image-container {
+    overflow: hidden;
+}
+
+.menu-card__img {
+    width: 110%;
+    display: block;
+}
+
+.menu-card__caption {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+}
+
+.caption-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.caption-title {
+    color: var(--black);
+    font: semibold 24px 'Markazi Text', serif;
+}
+
+.caption-price {
+    color: var(--salmon);
+    font: var(--highlight_font);
+}
+
+.caption-body {
+    margin: 1.5rem 0;
+    font: var(--paragraph_font);
+}
+
+.caption-footer {
+    display: flex;
+    justify-content: space-between;
+    font: var(--highlight_font);
+}
+
+.delivery-icon {
+    width: 16px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--light_gray);
+    padding: 2rem 18%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.vertical-nav {
+    padding: 0 0.5rem;
+}
+
+.logo-vertical {
+    width: 40%;
+    object-fit: cover;
+}
+
+.vertical-nav__title {
+    font: var(--section_title_font);
+}
+
+.vertical-nav__list {
+    padding: 0;
+}
+
+.vertical-nav__item {
+    list-style: none;
+}
+
+.vertical-nav__link {
+    text-decoration: none;
+    font: var(--highlight_font);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.vertical-nav__link:hover {
+    display: block;
+    font-weight: bold;
+    color: var(--main_green);
+    text-decoration: underline;
+}
+
+/* Testimonials styles */
+.testimonials {
+    background-color: var(--main_green);
+    padding: 4rem 18%;
+}
+
+.testimonials-title {
+    color: var(--main_yellow);
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 2rem ;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+
+.testimonials-card {
+    background-color: var(--light_gray);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.card-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-rating__star {
+    width: 20px;
+}
+
+.testimonials-card-img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+}
+
+.card-curstomer-name {
+    font: var(--section_title_font);
+    font-size: 18px;
+    color: var(--black);
+    text-align: center;
+}
+
+.card-curstomer-review {
+    margin-top: 0.5rem;
+    font: var(--paragraph_font);
+    text-align: center;
+}
+
+/* Testimonials card styles */
+.about {
+    padding: 5rem 18%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1rem;
+}
+
+.about-subtitle {
+    font: var(--subtitle_font);
+}
+
+.about-description {
+    font: var(--paragraph_font);
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+.about-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-img {
+    display: block;
+    width: 85%;
+    position: absolute;
+}
+
+.about-img__front {
+    top: 0;
+    right: 0;
+}
+
+.about-img__back {
+    bottom: 0;
+    left: 0;
+    border-top: 5px solid white ;
+    border-right: 5px solid white ;
+}
+
+/* Book Form styles */
+.book-form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 1rem; */
+}
+
+.book-form input {
+    padding:0.5rem 1rem;
+}
+
+.book-form textarea {
+    min-height: 10rem;
+}
+
+.book-form label {
+    font: var(--highlight_font);
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.must {
+    color: red;
+    font-weight: bold;
+}
+
+.book-form button {
+    margin-top: 1rem;
 }
