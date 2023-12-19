@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Homepage from './components/Homepage';
-import Reservations from './components/Reservations';
+import Homepage from './pages/Homepage.jsx';
+import Reservations from './pages/Reservations.jsx';
 
 function App() {
     return (

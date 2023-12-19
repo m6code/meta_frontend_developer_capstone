@@ -4,12 +4,12 @@ const FooterNav = ({linksData, title}) => {
             <h3 className="vertical-nav__title">{title}</h3>
             <ul className="vertical-nav__list">
                 {
-                    linksData.map(({link, text}) => (
+                    linksData.map(({link, text, eLink}) => (
                         <li 
                             key={text} 
                             className="vertical-nav__item"
                         >
-                            <a href={link} className="vertical-nav__link">
+                            <a href={link} className="vertical-nav__link" target={eLink? "_blank" : "_self"}>
                                 {text}
                             </a>
                         </li>    

@@ -29,7 +29,7 @@ const Testimonials = (props) => {
                 <RatingCard 
                     rating={4}
                     image={'src/assets/images/customer_4.jpg'}
-                    customerName="Christaina Combus"
+                    customerName="Christaina C"
                     customerReview="Greek Salad is my favorite dish. I share time with my family here."
                 />
             </div>

@@ -1,29 +1,35 @@
 const navigationLinks = {
-    title: 'Navegation',
+    title: 'Navigation',
     links: [
         {
-            href: './',
-            text: 'Home'
+            link: '/',
+            text: 'Home',
+            eLink: false
         },
         {
-            href: './',
-            text: 'About'
+            link: '/',
+            text: 'About',
+            eLink: false
         },
         {
-            href: './',
-            text: 'Menu'
+            link: '/',
+            text: 'Menu',
+            eLink: false
         },
         {
-            href: './',
-            text: 'Reservations'
+            link: '/reservation',
+            text: 'Reservations',
+            eLink: false
         },
         {
-            href: './',
-            text: 'Order Online'
+            link: '/',
+            text: 'Order Online',
+            eLink: false
         },
         {
-            href: './',
-            text: 'Login'
+            link: '/',
+            text: 'Login',
+            eLink: false
         }
     ]
 }
@@ -32,34 +38,45 @@ const contactLinks = {
     title: 'Contact',
     links: [
         {
-            href: './',
-            text: 'Adress'
+            link: './',
+            text: 'Address',
+            eLink: false
         },
         {
-            href: './',
-            text: 'Phone number'
+            link: './',
+            text: 'Phone number',
+            eLink: false
         },
         {
-            href: './',
-            text: 'Email'
+            link: './',
+            text: 'Email',
+            eLink: false
         }
     ]
 }
 
 const socialLinks = {
-    title: 'Social media',
+    title: 'Social Links',
     links: [
         {
-            href: './',
-            text: 'Facebook'
+            link: 'https://facebook.com',
+            text: 'Facebook',
+            eLink: true
         },
         {
-            href: './',
-            text: 'Instagram'
+            link: 'https://instagram.com',
+            text: 'Instagram',
+            eLink: true
         },
         {
-            href: './',
-            text: 'X'
+            link: 'https://tiktok.com',
+            text: "TikTok",
+            eLink: true
+        },
+        {
+            link: 'https://x.com',
+            text: 'X (Twitter)',
+            eLink: true
         }
     ] 
 }
